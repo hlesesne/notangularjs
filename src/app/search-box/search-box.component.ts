@@ -14,6 +14,9 @@ export class SearchBoxComponent implements OnInit {
   }
   doGoogle() {
     console.log(this.searchTerm);
+    if (this.searchTerm.indexOf('angular') === -1) {
+      this.searchTerm += ' angular ';
+    }
     const data = { q: this.searchTerm + ' -angularjs' };
     window.location.assign('https://www.google.com/search?' + this.encodeQueryData(data));
     this.searchTerm = null;

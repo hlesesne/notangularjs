@@ -46,7 +46,7 @@ module.exports = "<app-search-box></app-search-box>\n"
 /***/ 148:
 /***/ (function(module, exports) {
 
-module.exports = "<form (submit)=\"doGoogle()\" class=\"card align-middle\">\n  <div class=\"form-group card-block\">\n    <label for=\"searchTerm\">Angular Search Term</label>\n    <div class=\"input-group\">\n      <input type=\"text\" id=\"searchform\" class=\"form-control\" [(ngModel)]=\"searchTerm\" autofocus name=\"searchTerm\" placeholder=\"Enter search term\">\n      <span class=\"input-group-btn\">\n      <button type=\"submit\" id=\"s\" class=\"btn\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></button>\n      </span>\n    </div>\n    <small id=\"searchTermHelp\" class=\"form-text text-muted\">We will append -angularjs to your search</small>\n  </div>\n</form>\n"
+module.exports = "<form (submit)=\"doGoogle()\" class=\"card align-middle\">\n  <div class=\"form-group card-block\">\n    <label for=\"searchTerm\">Angular Search Term (adds angular if not included)</label>\n    <div class=\"input-group\">\n      <input type=\"text\" id=\"searchform\" class=\"form-control\" [(ngModel)]=\"searchTerm\" autofocus name=\"searchTerm\" placeholder=\"Enter search term\">\n      <span class=\"input-group-btn\">\n      <button type=\"submit\" id=\"s\" class=\"btn\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></button>\n      </span>\n    </div>\n    <small id=\"searchTermHelp\" class=\"form-text text-muted\">We will append -angularjs to your search</small>\n  </div>\n</form>\n"
 
 /***/ }),
 

@@ -1,0 +1,12 @@
+<form (submit)="doGoogle()" class="card align-middle">
+  <div class="form-group card-block">
+    <label for="searchTerm">Angular Search Term</label>
+    <div class="input-group">
+      <input type="text" id="searchform" class="form-control" [(ngModel)]="searchTerm" autofocus name="searchTerm" placeholder="Enter search term">
+      <span class="input-group-btn">
+      <button type="submit" id="s" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </span>
+    </div>
+    <small id="searchTermHelp" class="form-text text-muted">We will append -angularjs to your search</small>
+  </div>
+</form>
